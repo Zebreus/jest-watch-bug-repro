@@ -1,5 +1,17 @@
 # `jest --watch --coverage` has a few bugs
 
+## Steps to reproduce
+
+0. Clone/reset this repo 
+1. Dirty the file `alpha.js` ( `echo " " >> alpha.js` )
+2. Run `jest --watch --coverage`
+3. Press `t` and type `beta` to set test regex
+4. Obeserve the coverage report
+5. Exit testing
+6. Run `jest --watch --coverage -t beta`
+7. Observe the coverage report
+8. They are different
+
 ## Expected behaviour
 
 - Jest produces a consistent coverage report in watch mode.
