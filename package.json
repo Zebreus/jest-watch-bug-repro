@@ -1,0 +1,9 @@
+{
+  "name": "tmp.FXl1EYqrbT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^28.1.3"
+  }
+}
