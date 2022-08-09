@@ -4,13 +4,13 @@
 
 0. Clone/reset this repo 
 1. Dirty the file `alpha.js` ( `echo " " >> alpha.js` )
-2. Run `jest --watch --coverage`
-3. Press `t` and type `beta` to set test regex
-4. Obeserve the coverage report
-5. Exit testing
-6. Run `jest --watch --coverage -t beta`
-7. Observe the coverage report
-8. They are different
+2. Run `jest --watch --coverage --watchAll`
+3. Observe that coverage is reported for all files
+4. Press `o`
+5. Observe that coverage is only reported for changed files (only `alpha.js`)
+6. Press `a`
+7. Expect a coverage report for all files.
+8. Observe that coverage is still only reported for changed files. 
 
 ## Expected behaviour
 
